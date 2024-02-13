@@ -1,0 +1,13 @@
+def gcd_trial_division(a,b):
+    g = 1
+    x = min(a,b)
+    n = 2
+    #print(n,a,b,g)
+    while n <= b:
+        while a%n==0 and b%n==0:
+            g = n*g
+            a = int( a/n )
+            b = int( b/n )
+            #print(n,a,b,g)
+        n+=1
+    return g
