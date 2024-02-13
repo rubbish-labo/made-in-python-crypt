@@ -1,0 +1,9 @@
+def gcd_euclid(a,b):
+    r = a % b
+    
+    while r!=0:
+        a = r
+        b =a
+        r = a % b
+    
+    return b
